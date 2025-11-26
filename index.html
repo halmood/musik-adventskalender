@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chor Adventskalender - Pop, Groove & Vocal Hacks">
+    <title>Voice & Groove - Unser Adventskalender</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="calendar-overview">
+
+    <header>
+        <div style="font-size: 3em; margin-bottom: 10px;">🎤</div>
+        <h1>Voice & Groove</h1>
+        <div class="subtitle">
+            Der Adventskalender für Choriosum<br>
+            <span style="color: #D4AF37; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Pop • Jazz • Performance</span>
+        </div>
+    </header>
+
+    <div id="calendar-grid">
+        <a href="#" class="advent-door" id="door-1">1</a>
+        <a href="#" class="advent-door" id="door-2">2</a>
+        <a href="#" class="advent-door" id="door-3">3</a>
+        <a href="#" class="advent-door" id="door-4">4</a>
+        <a href="#" class="advent-door" id="door-5">5</a>
+        <a href="#" class="advent-door" id="door-6">6</a>
+        <a href="#" class="advent-door" id="door-7">7</a>
+        <a href="#" class="advent-door" id="door-8">8</a>
+        <a href="#" class="advent-door" id="door-9">9</a>
+        <a href="#" class="advent-door" id="door-10">10</a>
+        <a href="#" class="advent-door" id="door-11">11</a>
+        <a href="#" class="advent-door" id="door-12">12</a>
+        <a href="#" class="advent-door" id="door-13">13</a>
+        <a href="#" class="advent-door" id="door-14">14</a>
+        <a href="#" class="advent-door" id="door-15">15</a>
+        <a href="#" class="advent-door" id="door-16">16</a>
+        <a href="#" class="advent-door" id="door-17">17</a>
+        <a href="#" class="advent-door" id="door-18">18</a>
+        <a href="#" class="advent-door" id="door-19">19</a>
+        <a href="#" class="advent-door" id="door-20">20</a>
+        <a href="#" class="advent-door" id="door-21">21</a>
+        <a href="#" class="advent-door" id="door-22">22</a>
+        <a href="#" class="advent-door" id="door-23">23</a>
+        <a href="#" class="advent-door" id="door-24">24</a>
+    </div>
+
+    <div id="riddle-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <h2 id="modal-title">Tag X</h2>
+            
+            <img id="modal-image" src="" alt="Tagesbild" class="riddle-img">
+            
+            <div id="modal-text">
+                Rätsel wird geladen...
+            </div>
+            
+            <button id="solution-btn">Lösung enthüllen</button>
+            
+            <div id="modal-result" style="display: none; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(212, 175, 55, 0.3);">
+                
+                <div id="modal-answer">
+                    [LÖSUNG]
+                </div>
+
+                <div id="modal-explanation">
+                    [ERKLÄRUNG]
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
