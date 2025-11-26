@@ -171,7 +171,7 @@ function initializeCalendar() {
     
     // VARIANTE B: ECHTER ADVENTS-MODUS (Ab 1. Dezember nutzen)
     // Entferne die '//' vor der nächsten Zeile und setze sie vor 'const currentDay = 24;'
-    const currentDay = (today.getMonth() === 11) ? today.getDate() : 24; 
+    // const currentDay = (today.getMonth() === 11) ? today.getDate() : 0; 
 
     /* ----------------------------------- */
 
