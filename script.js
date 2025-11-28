@@ -165,11 +165,11 @@ function initializeCalendar() {
     // --- DATUMS EINSTELLUNG ---
 
     // AKTUELL: TEST-MODUS (Damit du JETZT alle Türchen sehen kannst)
-    const currentDay = 24;
+    //const currentDay = 24;
 
     // SPÄTER (für Dezember): Kommentiere die Zeile oben aus (mit // davor) und entferne die // vor der nächsten Zeile:
-    // const today = new Date();
-    // const currentDay = (today.getMonth() === 11) ? today.getDate() : 0;
+    const today = new Date();
+    const currentDay = (today.getMonth() === 11) ? today.getDate() : 0;
 
     // --------------------------
 
