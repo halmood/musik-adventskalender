@@ -143,10 +143,10 @@ const musicRiddles = [
         e: "Stage Presence starts before the music! Lächeln!"
     },
     {
-        day: 24,
-        q: "Der Song, der nach der Probe nicht mehr aus dem Kopf geht.",
-        a: "Der Ohrwurm",
-        e: "Frohe Weihnachten und keep singing!"
+    day: 24,
+    q: "Wir feilen das ganze Jahr an Technik, Rhythmus und Intonation. Aber was ist das Wichtigste, das wir unserem Publikum am heutigen Abend schenken können, das in keinen Noten steht?",
+    a: "Emotion (Gänsehaut / Herz)",
+    e: "Technik ist das Werkzeug, aber das Herz ist die Musik. Danke, dass ihr eure Stimmen teilt. Habt ein wundervolles, klingendes Weihnachtsfest!"
     }
 ];
 
