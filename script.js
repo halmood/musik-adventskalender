@@ -58,10 +58,10 @@ function initializeCalendar() {
     /* --- DATUMS EINSTELLUNG --- */
     
     // AKTUELL: TEST-MODUS (auf 24 gestellt, damit man auch die Bonus-Logik testen kann)
-    const currentDay = 24; 
+    //const currentDay = 24; 
 
     // SPÄTER (für Dezember): Kommentiere die Zeile oben aus und aktiviere diese:
-    // const currentDay = (today.getMonth() === 11) ? today.getDate() : 0; 
+    const currentDay = (today.getMonth() === 11) ? today.getDate() : 0; 
     
     /* ----------------------------------- */
 
