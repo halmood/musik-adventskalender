@@ -42,9 +42,9 @@ const musicRiddles = [
     },
     {
         day: 7,
-        q: "Wir sind fünf Stimmen, kommen aus Texas und haben A-Cappella wieder cool gemacht.",
-        a: "Pentatonix (PTX)",
-        e: "Sie beweisen: Man braucht keine Instrumente für fetten Pop-Sound."
+        q: "Ich bin ein Ton, der absichtlich ein bisschen tiefer gesungen wird, als er in der klassischen Tonleiter steht. Ich gebe dem Blues und Jazz seinen typischen 'traurigen' oder 'coolen' Sound.",
+        a: "Blue Note",
+        e: "Oft ist es die erniedrigte 3., 5. oder 7. Stufe. Sie bringt den 'Soul' in die Musik und reibt sich herrlich mit der Begleitung."
     },
     {
         day: 8,
