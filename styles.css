@@ -1,19 +1,16 @@
 /* ==============================================
-   Modern Pop Choir Calendar - Stylesheet v4.0
-   Theme: Royal Blue & Gold (Stage Look)
+   Modern Pop Choir Calendar - Stylesheet v6.0
+   Theme: Royal Blue & Gold (Bonus Edition)
    ============================================== */
 
 :root {
-    /* Farben: Unsere Chor-Farben */
-    --bg-dark: #050A14;      /* Fast schwarz für Tiefe */
-    --bg-blue: #0F2040;      /* Edles Royal Blue */
-    --gold: #D4AF37;         /* Klassisches Gold */
-    --gold-bright: #FADC6F;  /* Helles Gold für Hover/Licht */
-    --text-main: #F0F4F8;    /* Helles Grau-Weiß (besser als reines Weiß) */
-    
-    /* Fonts: Modern & Clean */
-    --font-heading: 'Montserrat', sans-serif; /* Modern, Bold, Pop-Style */
-    --font-body: 'Lato', sans-serif;          /* Gut lesbar */
+    --bg-dark: #050A14;      
+    --bg-blue: #0F2040;      
+    --gold: #D4AF37;         
+    --gold-bright: #FADC6F;  
+    --text-main: #F0F4F8;    
+    --font-heading: 'Montserrat', sans-serif; 
+    --font-body: 'Lato', sans-serif;          
 }
 
 body {
@@ -22,18 +19,21 @@ body {
     font-family: var(--font-body);
     margin: 0;
     padding: 20px;
-    
-    /* Hintergrund: Ein Bühnen-Spotlight Effekt */
     background: radial-gradient(circle at top center, var(--bg-blue) 0%, var(--bg-dark) 80%);
     background-attachment: fixed;
     min-height: 100vh;
 }
 
-/* Header Bereich */
+/* Header */
 header {
     text-align: center;
     margin-bottom: 50px;
     padding-top: 20px;
+}
+
+.logo-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -41,10 +41,9 @@ h1 {
     color: var(--gold);
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 2.8em;
+    font-size: 2.5em;
     margin: 0;
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); /* Goldener Schein */
-    position: relative;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
     display: inline-block;
 }
 
@@ -61,108 +60,133 @@ h1::after {
 .subtitle {
     font-family: var(--font-body);
     font-size: 1.1em;
-    color: #a0b0c0; /* Leichtes Blau-Grau */
+    color: #a0b0c0;
     margin-top: 15px;
     font-weight: 300;
 }
 
-/* Container für die Türchen */
+.highlight {
+    color: var(--gold); 
+    font-size: 0.9em; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+/* Grid Container */
 #calendar-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto 60px auto;
 }
 
-/* Die Türchen (Cards) */
+/* Die Türchen */
 .advent-door {
-    background: rgba(15, 32, 64, 0.6); /* Transparentes Blau */
-    border: 1px solid rgba(212, 175, 55, 0.3); /* Subtiler Goldrand */
-    color: var(--gold);
-    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5em;
+    height: 110px;
+    background: rgba(15, 32, 64, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: var(--gold);
+    font-size: 2.2em;
     font-weight: 800;
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     cursor: not-allowed;
     opacity: 0.5;
     position: relative;
     font-family: var(--font-heading);
     border-radius: 8px;
-    backdrop-filter: blur(5px); /* Milchglas-Effekt */
+    backdrop-filter: blur(5px);
+}
+
+/* Spezielles Styling für das Bonus-Türchen */
+.bonus-door {
+    font-size: 1.2em; /* Kleinerer Text für "★ Bonus ★" */
+    border-color: var(--gold-bright); /* Hellerer Rahmen */
+    background: rgba(212, 175, 55, 0.1); /* Leichter Goldschimmer */
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /* Locked State */
 .advent-door.locked::before {
     content: "🔒";
-    font-size: 16px;
+    font-size: 0.5em;
     position: absolute;
-    top: 10px; right: 10px;
+    top: 8px; right: 8px;
     opacity: 0.5;
     filter: grayscale(100%);
 }
+/* Schloss beim Bonus-Türchen etwas anpassen */
+.bonus-door.locked::before {
+     top: 5px; right: 5px;
+}
 
-/* Active State (Das Türchen ist bereit) */
+
+/* Active State */
 .advent-door.active {
     border-color: var(--gold);
     background: linear-gradient(135deg, var(--bg-blue), #1a3a6e);
     color: var(--gold-bright);
     cursor: pointer;
     opacity: 1;
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
 }
 
-/* Hover Effekt für aktive Türchen */
 .advent-door.active:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5), 0 0 15px rgba(212, 175, 55, 0.4);
+    transform: translateY(-5px);
     background: var(--gold);
-    color: var(--bg-dark); /* Text wird dunkel auf goldenem Grund */
+    color: var(--bg-dark);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-/* --- Das Modal (Popup) --- */
+/* Bonus Active Hover */
+.bonus-door.active:hover {
+    background: var(--gold-bright);
+    box-shadow: 0 0 30px rgba(250, 220, 111, 0.6);
+}
+
+/* Modal Styling */
 #riddle-modal {
     display: none; 
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(5, 10, 20, 0.95); /* Sehr dunkler Hintergrund */
-    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
 }
 
 .modal-content {
     background: linear-gradient(to bottom right, #0F2040, #050A14);
     color: var(--text-main);
     border: 2px solid var(--gold);
-    padding: 40px;
+    padding: 30px;
     max-width: 550px;
     width: 90%;
-    max-height: 85vh; 
+    max-height: 90vh; 
     overflow-y: auto;
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
     text-align: center;
     position: relative;
     border-radius: 12px;
-    animation: zoomIn 0.3s ease-out;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 h2#modal-title {
-    font-family: var(--font-heading);
     color: var(--gold);
-    font-size: 1.8em;
+    font-family: var(--font-heading);
     margin-top: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    padding-bottom: 15px;
 }
 
-/* Bilder im Modal */
 .riddle-img {
     width: 100%;             
     height: auto;            
@@ -171,32 +195,36 @@ h2#modal-title {
     border-radius: 6px;
     margin: 20px 0;       
     border: 1px solid var(--gold);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    display: none; /* JS schaltet das an */
+    display: none; 
 }
+/* Zeige Bild nur, wenn src vorhanden ist */
 .riddle-img[src^="images/"] { display: block; }
 
-/* Text Styles */
 #modal-text {
-    font-size: 1.25em;
-    font-family: var(--font-heading); /* Überschrift-Font auch für Frage nutzen für Modernität */
+    font-size: 1.2em;
+    font-family: var(--font-heading);
     font-weight: 500;
     margin: 20px 0;
     line-height: 1.5;
-    color: #fff;
+}
+
+#modal-result {
+    margin-top: 25px; 
+    padding-top: 20px; 
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 #modal-answer {
     color: var(--gold);
     font-family: var(--font-heading);
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 800;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
 #modal-explanation {
-    background: rgba(255, 255, 255, 0.05); /* Sehr transparent */
+    background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-left: 3px solid var(--gold);
     text-align: left;
@@ -206,7 +234,6 @@ h2#modal-title {
     border-radius: 0 8px 8px 0;
 }
 
-/* Button Styling */
 button {
     background: transparent;
     border: 2px solid var(--gold);
@@ -219,15 +246,12 @@ button {
     transition: 0.3s;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 1px;
-    border-radius: 50px; /* Pill Shape */
+    border-radius: 50px;
 }
 
 button:hover {
     background: var(--gold);
     color: var(--bg-dark);
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-    transform: translateY(-2px);
 }
 
 .close-btn {
@@ -237,19 +261,13 @@ button:hover {
     font-size: 35px;
     cursor: pointer;
     line-height: 1;
-    transition: 0.2s;
 }
-.close-btn:hover { color: #fff; transform: rotate(90deg); }
+.close-btn:hover { color: #fff; }
 
-@keyframes zoomIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-/* Mobile Adjustments */
 @media (max-width: 600px) {
-    h1 { font-size: 2em; }
-    .modal-content { padding: 25px; width: 90%; }
     #calendar-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
-    .advent-door { height: 90px; font-size: 2em; }
+    h1 { font-size: 2em; }
+    .modal-content { padding: 20px; width: 95%; }
+    /* Bonus Tür auf Handy etwas kleinerer Text */
+    .bonus-door { font-size: 1em; }
 }
