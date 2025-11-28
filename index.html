@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chor Adventskalender - Pop, Groove & Vocal Hacks">
-    <title>Voice & Groove - Unser Adventskalender</title>
+    <title>Voice & Groove - Chor Adventskalender</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +14,11 @@
 <body class="calendar-overview">
 
     <header>
-        <div style="font-size: 3em; margin-bottom: 10px;">🎤</div>
+        <div class="logo-icon">🎤</div>
         <h1>Voice & Groove</h1>
         <div class="subtitle">
-            Der Adventskalender für Choriosum<br>
-            <span style="color: #D4AF37; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Chor • Pop • Performance</span>
+            Der Adventskalender für unseren Chor<br>
+            <span class="highlight">Pop • Jazz • Performance</span>
         </div>
     </header>
 
@@ -48,6 +47,8 @@
         <a href="#" class="advent-door" id="door-22">22</a>
         <a href="#" class="advent-door" id="door-23">23</a>
         <a href="#" class="advent-door" id="door-24">24</a>
+        
+        <a href="#" class="advent-door bonus-door" id="door-25">★ Bonus ★</a>
     </div>
 
     <div id="riddle-modal">
@@ -56,7 +57,7 @@
             
             <h2 id="modal-title">Tag X</h2>
             
-            <img id="modal-image" src="" alt="Tagesbild" class="riddle-img">
+            <img id="modal-image" src="" alt="" class="riddle-img">
             
             <div id="modal-text">
                 Rätsel wird geladen...
@@ -64,7 +65,7 @@
             
             <button id="solution-btn">Lösung enthüllen</button>
             
-            <div id="modal-result" style="display: none; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(212, 175, 55, 0.3);">
+            <div id="modal-result" style="display: none;">
                 
                 <div id="modal-answer">
                     [LÖSUNG]
