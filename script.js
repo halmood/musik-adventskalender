@@ -23,10 +23,10 @@ const musicRiddles = [
         e: "Das Pfeifen ist Rückkopplung. **Technik-Tipp:** Mikrofonkorb nicht mit der Hand umschließen!"
     },
     {
-        day: 4,
-        q: "Welcher Wham!-Hit von 1984 darf auf keiner Weihnachtsfeier fehlen, obwohl das Video eigentlich in einer Skihütte spielt?",
-        a: "Last Christmas",
-        e: "George Michael hat das Lied im Alleingang geschrieben und produziert."
+    day: 4, // (Ersetzt Last Christmas)
+    q: "Ich bin der wichtigste Muskel für Sänger, aber ich sitze nicht im Hals. Wenn du tief einatmest, bewege ich mich nach unten und mache Platz für die Luft. Ohne mich klingt der Chor dünn.",
+    a: "Das Zwerchfell (Diaphragma)",
+    e: "Der Motor deiner Stimme! **Pop-Tipp:** Stell dir beim Singen vor, du hast einen 'Schwimmreifen' um den Bauch, der stabil bleiben muss – besonders bei hohen Tönen!"
     },
     {
         day: 5,
@@ -107,10 +107,10 @@ const musicRiddles = [
         e: "Das Gegenteil ist 'straight'. Wer 'straight' singt, wenn die Band 'shuffelt', klingt uncool."
     },
     {
-        day: 18,
-        q: "Schwedische Pop-Gruppe. 'Mamma Mia', 'Dancing Queen'.",
-        a: "ABBA",
-        e: "Sie sangen oft unisono oder in sehr engen Terzen für den typischen metallischen Sound."
+    day: 18, // (Ersetzt ABBA)
+    q: "Wir sind die Stimmen in der Mitte. Wir singen selten die Melodie, haben oft die schwierigsten Töne zu treffen und unsere Noten sehen aus wie eine wilde Achterbahnfahrt.",
+    a: "Der Alt (oder die Mittelstimmen)",
+    e: "Ein Hoch auf den 'Klebstoff' des Chores! Ohne die stabilen Mittelstimmen, die mutig ihre schrägen Töne halten, würde der ganze Popsound zusammenbrechen."
     },
     {
         day: 19,
@@ -119,10 +119,10 @@ const musicRiddles = [
         e: "Lockert die Muskulatur und verbindet Brust- und Kopfstimme."
     },
     {
-        day: 20,
-        q: "Leonard Cohen hat dieses Lied geschrieben, Pentatonix singen es oft. 'The Secret Chord'.",
-        a: "Hallelujah",
-        e: "Der Text ist düster, der Refrain eine Hymne."
+    day: 20, // (Ersetzt Hallelujah)
+    q: "Der magischste Moment im Konzert: Der letzte Akkord ist verklungen, der Dirigent hält noch die Spannung, und im Saal ist es sekundenlang totenstill, bevor der Applaus losbricht.",
+    a: "Die 'heilige Stille' (The Golden Silence)",
+    e: "Das ist der Moment, in dem man spürt, dass die Musik das Publikum wirklich erreicht hat. Gänsehaut pur und der Lohn für alle Probenarbeit."
     },
     {
         day: 21,
