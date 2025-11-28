@@ -84,7 +84,7 @@ const musicRiddles = [
     },
     {
         day: 14,
-        q: "Wenn der Dirigent sagt: 'Ihr schleppt!', was meint er damit?",
+        q: "Wenn die Chorleiterin sagt: 'Ihr schleppt!', was meint er damit?",
         a: "Wir sind zu langsam",
         e: "Pop muss 'treiben'. Denkt den Rhythmus eher einen Millimeter *vor* dem Schlag."
     },
